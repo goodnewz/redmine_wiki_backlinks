@@ -32,6 +32,7 @@ Redmine::Plugin.register :redmine_wiki_backlinks do
   menu :admin_menu,
        :wiki_links,
        { :controller => 'wiki_links', :action => 'index'},
-       :caption => :label_admin_wiki_links
+       :caption => :label_admin_wiki_links,
+       :html => {:class => 'icon icon-wiki-links wiki-links'}
 
 end
